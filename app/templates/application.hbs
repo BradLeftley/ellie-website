@@ -1,2 +1,38 @@
-<h1>Ellie Website</h1>
-{{outlet}}
+{{#bs-navbar class='navbar navbar-right' as |navbar|}}
+<div class="navbar-header">
+    {{navbar.toggle}}
+</div>
+{{#navbar.content}}
+{{#navbar.nav as |nav|}}
+{{#nav.item}}
+{{!-- {{scroll-to href='#faq' label='Home'}} --}}
+{{#nav.link-to "index"}}About Me{{/nav.link-to}}
+{{/nav.item}}
+{{#nav.item}}
+{{#nav.link-to "index"}}Blog{{/nav.link-to}}
+{{/nav.item}}
+{{#nav.item}}
+{{#nav.link-to "index"}}Work{{/nav.link-to}}
+{{/nav.item}}
+{{/navbar.nav}}
+{{/navbar.content}}
+{{/bs-navbar}}
+<section class="landing">
+    <div class="container">
+        <h1>Ellie Leftley</h1>
+        <h4>Aspiring UX Designer</h4>
+    </div>
+
+</section>
+<section class="about-me">
+<div class="text-container container">
+    <h1>
+        Hello,
+    </h1>
+<h4>I am a newly developing passioante UX designer. </h4>
+
+<h5>After spending early years of my career in professional services sector, my passion for design has inspired me to explore UX and UI………..</h5>
+
+</div>
+
+</section>

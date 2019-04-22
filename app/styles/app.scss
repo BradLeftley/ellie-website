@@ -1,1 +1,76 @@
 @import "ember-bootstrap/bootstrap";
+$back: #f7f0f5;
+$aboutme: #B5B4B4;
+body {
+  background: $back;
+}
+.navbar {
+    background: $back !important;
+    float: right;
+    a {
+        font-family: Helvetica;
+font-size: 15px;
+color: #000000;
+letter-spacing: 8.63px;
+    }
+}
+
+.landing {
+  h1 {
+    text-align: center;
+
+    font-family: Helvetica-Bold;
+    font-size: 53px;
+    color: #4a4a4a;
+    letter-spacing: 23.98px;
+  }
+  h4 {
+    text-align: center;
+
+    font-family: Helvetica;
+    font-size: 30px;
+    color: #000000;
+    letter-spacing: 13.07px;
+    line-height: 24px;
+  }
+}
+
+.about-me {
+    background: $aboutme;
+    .text-container {
+        padding-top: 5rem;
+        padding-bottom: 15rem;
+    }
+    h1 {
+        font-family: Helvetica-Bold;
+        font-size: 75px;
+        color: #FCFAFC;
+        letter-spacing: 5px;
+        text-align: left;
+    }
+    h4 {
+        font-family: Helvetica;
+        font-size: 35px;
+        color: #FCFAFC;
+        letter-spacing: 2.8px;
+        text-align: left;
+    }
+    h5 {
+        font-family: Helvetica;
+font-size: 24px;
+color: #FCFAFC;
+letter-spacing: 2.8px;
+text-align: left;
+    }
+}
+
+.work {
+
+}
+
+@media (min-width: 768px) {
+  .landing {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+}
