@@ -4,9 +4,6 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    fingerprint: {
-      exclude: ['/assets', 'assets', 'assets/images']
-    },
     'ember-bootstrap': {
       'bootstrapVersion': 4,
       'importBootstrapFont': false,
