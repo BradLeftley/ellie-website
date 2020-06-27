@@ -13,13 +13,25 @@
       </ScrollContainer>
 {{/nav.item}}
 {{#nav.item}}
-{{#nav.link-to "index"}}Blog{{/nav.link-to}}
+    <ScrollContainer @linkId="about">
+      <a class="nav-link js-scroll-trigger" href="#blog">
+         Blog
+       </a>
+      </ScrollContainer>
 {{/nav.item}}
 {{#nav.item}}
-{{#nav.link-to "index"}}Work{{/nav.link-to}}
+    <ScrollContainer @linkId="work">
+      <a class="nav-link js-scroll-trigger" href="#work">
+         Work
+       </a>
+      </ScrollContainer>
 {{/nav.item}}
 {{#nav.item}}
-{{#nav.link-to "index"}}Contact{{/nav.link-to}}
+    <ScrollContainer @linkId="about">
+      <a class="nav-link js-scroll-trigger" href="#contact">
+         Contact
+       </a>
+      </ScrollContainer>
 {{/nav.item}}
 {{/navbar.nav}}
 {{/navbar.content}}
@@ -72,11 +84,20 @@
             </div>
         </header> --}}
 <section class="page-section portfolio" id="portfolio">
-    <div class="container">
+<div class="" style="margin: 1rem;">
+        <br>
+      <h2 class="page-section-heading text-center text-uppercase  mb-0">Work</h2>
+      <br>
+    <div class="row">
         <!-- Portfolio Section Heading-->
+
+      
         <br>
-        <h2 class="page-section-heading text-center text-uppercase  mb-0">Work</h2>
-        <br>
+               
+  <div class="work-card col-sm"><h4 style="font-size: 43px;">Simply Gluten Free</h4></div>
+  <div class="work-card col-sm"><h4 style="font-size: 43px;">Chase.Livestream</h4></div>
+  <div class="work-card col-sm"><h4 style="font-size: 43px;">Unraid Network</h4></div>
+</div>
         <!-- Icon Divider-->
         <div class="divider-custom">
             <div class="divider-custom-line"></div>
@@ -87,7 +108,8 @@
         <div class="row">
             <!-- Portfolio Item 1-->
 
-        </div>
+       
+    </div>
     </div>
 </section>
 <section class="work">
@@ -103,7 +125,7 @@
 
 </section>
 
-<section class="work">
+{{!-- <section class="work">
     <section class="blog">
         <div class="text-container container">
             <h1>
@@ -124,14 +146,16 @@
 
     </div>
 
-</section>
+</section> --}}
 
 <section class="contact">
     <div class="text-container container">
         <h1>
             Contact
         </h1>
-
+    <div class="row">
+        
+    </div>
     </div>
 
 </section>
