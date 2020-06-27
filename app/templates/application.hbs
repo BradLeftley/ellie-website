@@ -1,11 +1,11 @@
-{{#bs-navbar class='navbar navbar-right' as |navbar|}}
+{{!--{{#bs-navbar class='navbar navbar-right' as |navbar|}}
 <div class="navbar-header">
     {{navbar.toggle}}
 </div>
 {{#navbar.content}}
 {{#navbar.nav as |nav|}}
 {{#nav.item}}
-{{!-- {{scroll-to href='#faq' label='Home'}} --}}
+
     <ScrollContainer @linkId="about">
       <a class="nav-link js-scroll-trigger" href="#about">
          About
@@ -35,8 +35,20 @@
 {{/nav.item}}
 {{/navbar.nav}}
 {{/navbar.content}}
-{{/bs-navbar}}
-
+{{/bs-navbar}} --}}
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Ellie Leftley.</a>
+    </div>
+    <ul class="nav navbar-nav">
+      {{!-- <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li> --}}
+    </ul>
+  </div>
+</nav>
 {{outlet}}
 
 

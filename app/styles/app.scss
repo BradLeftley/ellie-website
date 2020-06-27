@@ -15,7 +15,7 @@ h5 {
   color: black;
 }
 .navbar {
-  float: right;
+
   a {
     font-family: Abel;
     font-size: 15px;
@@ -120,7 +120,7 @@ font-weight: normal;
 
 @media (min-width: 768px) {
   .landing {
-    background-image: url("ellie.jpeg");
+    background-image: url("images/ellie.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,6 +128,6 @@ font-weight: normal;
     background-blend-mode: multiply;
     padding-top: 214px;
     padding-bottom: 200px;
-    height: 45rem;
+    height: 50rem;
   }
 }
