@@ -6,7 +6,10 @@
 {{#navbar.nav as |nav|}}
 {{#nav.item}}
 {{!-- {{scroll-to href='#faq' label='Home'}} --}}
-{{#nav.link-to "index"}}About Me{{/nav.link-to}}
+ <ScrollContainer @linkId="about">
+     {{#nav.link-to "index"}}About Me{{/nav.link-to}}
+ </ScrollContainer>
+
 {{/nav.item}}
 {{#nav.item}}
 {{#nav.link-to "index"}}Blog{{/nav.link-to}}
@@ -23,15 +26,126 @@
 <section class="landing">
     <div class="container">
         <div class="col-md-6">
-        <h3>Ellie Leftley.</h3>
-        <h5>UX Designer</h5>   
+            <h3>Ellie Leftley.</h3>
+            <h5>UX Designer</h5>
+            <h5>London, UK</h5>
+
         </div>
 
     </div>
 
 </section>
-<section class="about-me">
-<div class="text-container container">
+<section class="about-me" id="about">
+        <Anchor @id="about"/>
+    <div class="text-container container">
+        <h1>
+            Hello,
+        </h1>
+        <h4>I’m Ellie.
+            A UX designer based in London, UK.</h4>
+
+        <h5>I am a driven UX designer who’s motivation stems from a passion for creating intuitive digital user
+            experiences with impactful design.</h5>
+        <br>
+        <h5>After spending the first few years of my career in events and marketing roles, I have developed a strong
+            understanding of customer behaviours as well as being led by analytic research insights to achieve desired
+            outcomes. </h5>
+        <br>
+        <h5>Want to know more? Let’s chat! (Link to contact me) </h5>
+    </div>
+</section>
+
+{{!-- <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" /><!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
+            </div>
+        </header> --}}
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase  mb-0">Portfolio</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row">
+            <!-- Portfolio Item 1-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i
+                                class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="cabin.png" alt="" />
+                </div>
+            </div>
+            <!-- Portfolio Item 2-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i
+                                class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="cake.png" alt="" />
+                </div>
+            </div>
+            <!-- Portfolio Item 3-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i
+                                class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="circus.png" alt="" />
+                </div>
+            </div>
+            <!-- Portfolio Item 4-->
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i
+                                class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="game.png" alt="" />
+                </div>
+            </div>
+            <!-- Portfolio Item 5-->
+            <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i
+                                class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="safe.png" alt="" />
+                </div>
+            </div>
+            <!-- Portfolio Item 6-->
+            <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i
+                                class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="submarine.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="work">
+    {{!-- <div class="text-container container">
     <h1>
         Hello,
     </h1>
@@ -39,66 +153,55 @@
 
 <h5>After spending early years of my career in professional services sector, my passion for design has inspired me to explore UX and UI………..</h5>
 
-</div>
-</section>
-<section class="work">
-<div class="text-container container">
-    <h1>
-        Hello,
-    </h1>
-<h4>I am a newly developing passioante UX designer. </h4>
-
-<h5>After spending early years of my career in professional services sector, my passion for design has inspired me to explore UX and UI………..</h5>
-
-</div>
+</div> --}}
 
 </section>
 
 <section class="work">
-<section class="blog">
-<div class="text-container container">
-    <h1>
-        Work
-    </h1>
+    <section class="blog">
+        <div class="text-container container">
+            <h1>
+                Work
+            </h1>
 
-</div>
+        </div>
+
+    </section>
 
 </section>
 
-</section>
-
 <section class="blog">
-<div class="text-container container">
-    <h1>
-        Blog
-    </h1>
+    <div class="text-container container">
+        <h1>
+            Blog
+        </h1>
 
-</div>
+    </div>
 
 </section>
 
 <section class="contact">
-<div class="text-container container">
-    <h1>
-        Contact
-    </h1>
+    <div class="text-container container">
+        <h1>
+            Contact
+        </h1>
 
-</div>
+    </div>
 
 </section>
 
 <section>
     <div class="container">
         <div class="row">
-                <div class="col-md-4">
-            <h4>London, United Kingdom</h4>
-        </div>
-        <div class="col-md-4">
-            <h4>LinkedIn</h4>
-        </div>
-         <div class="col-md-4">
-            <h4>ellieleftley@yahoo.co.uk</h4>
-        </div>    
+            <div class="col-md-4">
+                <h4>London, United Kingdom</h4>
+            </div>
+            <div class="col-md-4">
+                <h4>LinkedIn</h4>
+            </div>
+            <div class="col-md-4">
+                <h4>ellieleftley@yahoo.co.uk</h4>
+            </div>
         </div>
 
     </div>

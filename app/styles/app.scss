@@ -1,27 +1,61 @@
 @import "ember-bootstrap/bootstrap";
 $back: #f7f0f5;
-$aboutme: #B5B4B4;
+$aboutme: #b5b4b4;
+$pink: #d75c97;
 body {
   background: $back;
 }
+h3 {
+  color: black;
+}
+h5 {
+  color: black;
+}
 .navbar {
-    background: $back !important;
-    float: right;
-    a {
-        font-family: Helvetica;
-font-size: 15px;
-color: #000000;
-font-family: Helvetica;
-font-size: 22px;
-letter-spacing: 0;
-    }
+  float: right;
+  a {
+    font-family: Abel;
+    font-size: 15px;
+    color: #000000;
+    font-family: Abel;
+    font-size: 22px;
+    letter-spacing: 0;
+  }
 }
 
+.masthead {
+  padding-top: calc(6rem + 74px);
+  padding-bottom: 6rem;
+}
+.masthead .masthead-heading {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+}
+.masthead .masthead-subheading {
+  font-size: 1.25rem;
+}
+.masthead .masthead-avatar {
+  width: 15rem;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    padding-top: calc(6rem + 104px);
+    padding-bottom: 6rem;
+  }
+  .masthead .masthead-heading {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+  .masthead .masthead-subheading {
+    font-size: 1.5rem;
+  }
+}
 .landing {
   h1 {
     text-align: center;
 
-    font-family: Helvetica-Bold;
+    font-family: Abel;
     font-size: 53px;
     color: #4a4a4a;
     letter-spacing: 23.98px;
@@ -29,7 +63,7 @@ letter-spacing: 0;
   h4 {
     text-align: center;
 
-    font-family: Helvetica;
+    font-family: Abel;
     font-size: 30px;
     color: #000000;
     letter-spacing: 13.07px;
@@ -38,41 +72,49 @@ letter-spacing: 0;
 }
 
 .about-me {
-    background: $aboutme;
-    .text-container {
-        padding-top: 5rem;
-        padding-bottom: 15rem;
-    }
-    h1 {
-        font-family: Helvetica-Bold;
-        font-size: 75px;
-        color: #FCFAFC;
-        letter-spacing: 5px;
-        text-align: left;
-    }
-    h4 {
-        font-family: Helvetica;
-        font-size: 35px;
-        color: #FCFAFC;
-        letter-spacing: 2.8px;
-        text-align: left;
-    }
-    h5 {
-        font-family: Helvetica;
-font-size: 24px;
-color: #FCFAFC;
-letter-spacing: 2.8px;
-text-align: left;
-    }
+  background: $pink;
+  .text-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  h1 {
+    font-family: Abel;
+    font-size: 75px;
+    color: #fcfafc;
+    letter-spacing: 5px;
+    text-align: left;
+  }
+  h4 {
+    font-family: Abel;
+    font-size: 35px;
+    color: #fcfafc;
+    letter-spacing: 2.8px;
+    text-align: left;
+  }
+  h5 {
+    font-family: Abel;
+font-style: normal;
+font-weight: normal;
+    color: #FCFAFC;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+  }
 }
 
 .work {
-
 }
 
 @media (min-width: 768px) {
   .landing {
-    padding-top: 300px;
+    background-image: url("/ellie.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(198, 3, 252, 0); // Tint color
+    background-blend-mode: multiply;
+    padding-top: 214px;
     padding-bottom: 200px;
+    height: 45rem;
   }
 }
