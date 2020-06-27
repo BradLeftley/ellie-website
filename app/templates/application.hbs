@@ -6,10 +6,11 @@
 {{#navbar.nav as |nav|}}
 {{#nav.item}}
 {{!-- {{scroll-to href='#faq' label='Home'}} --}}
- <ScrollContainer @linkId="about">
-     {{#nav.link-to "index"}}About Me{{/nav.link-to}}
- </ScrollContainer>
-
+    <ScrollContainer @linkId="about">
+      <a class="nav-link js-scroll-trigger" href="#about">
+         About
+       </a>
+      </ScrollContainer>
 {{/nav.item}}
 {{#nav.item}}
 {{#nav.link-to "index"}}Blog{{/nav.link-to}}
@@ -36,8 +37,9 @@
 
 </section>
 <section class="about-me" id="about">
-        <Anchor @id="about"/>
+  
     <div class="text-container container">
+                <Anchor @id="about"></Anchor>
         <h1>
             Hello,
         </h1>
@@ -72,7 +74,9 @@
 <section class="page-section portfolio" id="portfolio">
     <div class="container">
         <!-- Portfolio Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase  mb-0">Portfolio</h2>
+        <br>
+        <h2 class="page-section-heading text-center text-uppercase  mb-0">Work</h2>
+        <br>
         <!-- Icon Divider-->
         <div class="divider-custom">
             <div class="divider-custom-line"></div>
@@ -82,65 +86,7 @@
         <!-- Portfolio Grid Items-->
         <div class="row">
             <!-- Portfolio Item 1-->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i
-                                class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="cabin.png" alt="" />
-                </div>
-            </div>
-            <!-- Portfolio Item 2-->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i
-                                class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="cake.png" alt="" />
-                </div>
-            </div>
-            <!-- Portfolio Item 3-->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i
-                                class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="circus.png" alt="" />
-                </div>
-            </div>
-            <!-- Portfolio Item 4-->
-            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i
-                                class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="game.png" alt="" />
-                </div>
-            </div>
-            <!-- Portfolio Item 5-->
-            <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i
-                                class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="safe.png" alt="" />
-                </div>
-            </div>
-            <!-- Portfolio Item 6-->
-            <div class="col-md-6 col-lg-4">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i
-                                class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="submarine.png" alt="" />
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
