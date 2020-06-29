@@ -29,6 +29,27 @@ h5 {
     font-size: 22px;
     letter-spacing: 0;
   }
+  
+}
+
+
+.nav-item {
+  transition: transform .2s;
+  .active {
+    transition: transform .2s;
+    a {
+      color: white !important;
+      background: #d75c97;
+      border-radius: 5px;
+     
+    }
+  }
+  // &.active {
+  // background: #d75c97;
+  // }
+  // a:active{
+  //   background: red;
+  // }
 }
 .post-heading {
   color: white;
