@@ -36,6 +36,7 @@
 {{/navbar.nav}}
 {{/navbar.content}}
 {{/bs-navbar}} --}}
+{{log router.currentRoute.name}}
 <BsNavbar class="navbar navbar-inverse navbar-fixed-top" as |navbar| >
   <div class="navbar-header ">
     <navbar.toggle />
@@ -45,6 +46,7 @@
   </div>
   <navbar.content style="">
     <navbar.nav as |nav|>
+      {{#if (eq router.currentRoute.name "index")}}
       <nav.item>
        <ScrollContainer @linkId="about">
       <a class="nav-link js-scroll-trigger" href="#about">
@@ -58,7 +60,9 @@
          Work
        </a>
       </ScrollContainer>
+
       </nav.item>
+            {{/if}}
     </navbar.nav>
   </navbar.content>
 </BsNavbar>
