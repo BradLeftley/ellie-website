@@ -1,41 +1,3 @@
-{{!--{{#bs-navbar class='navbar navbar-right' as |navbar|}}
-<div class="navbar-header">
-    {{navbar.toggle}}
-</div>
-{{#navbar.content}}
-{{#navbar.nav as |nav|}}
-{{#nav.item}}
-
-    <ScrollContainer @linkId="about">
-      <a class="nav-link js-scroll-trigger" href="#about">
-         About
-       </a>
-      </ScrollContainer>
-{{/nav.item}}
-{{#nav.item}}
-    <ScrollContainer @linkId="about">
-      <a class="nav-link js-scroll-trigger" href="#blog">
-         Blog
-       </a>
-      </ScrollContainer>
-{{/nav.item}}
-{{#nav.item}}
-    <ScrollContainer @linkId="work">
-      <a class="nav-link js-scroll-trigger" href="#work">
-         Work
-       </a>
-      </ScrollContainer>
-{{/nav.item}}
-{{#nav.item}}
-    <ScrollContainer @linkId="about">
-      <a class="nav-link js-scroll-trigger" href="#contact">
-         Contact
-       </a>
-      </ScrollContainer>
-{{/nav.item}}
-{{/navbar.nav}}
-{{/navbar.content}}
-{{/bs-navbar}} --}}
 <BsNavbar class="navbar navbar-inverse navbar-fixed-top" as |navbar| >
   <div class="navbar-header ">
     <navbar.toggle />
@@ -45,6 +7,7 @@
   </div>
   <navbar.content style="">
     <navbar.nav as |nav|>
+      {{#if (eq router.currentRoute.name "index")}}
       <nav.item>
        <ScrollContainer @linkId="about">
       <a class="nav-link js-scroll-trigger" href="#about">
@@ -58,7 +21,17 @@
          Work
        </a>
       </ScrollContainer>
+
       </nav.item>
+            <nav.item>
+    <ScrollContainer @linkId="work">
+      <a class="nav-link js-scroll-trigger" href="#contact">
+         Contact
+       </a>
+      </ScrollContainer>
+
+      </nav.item>
+            {{/if}}
     </navbar.nav>
   </navbar.content>
 </BsNavbar>
