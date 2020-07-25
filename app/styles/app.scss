@@ -9,12 +9,20 @@ body {
   background: $back;
 }
 h3 {
+  font-family: Abel;
   color: black;
 }
 h5 {
+  font-family: Abel;
   color: black;
 }
-
+h2, h4 {
+  font-family: Abel;
+  color: black;
+}
+.subheading {
+  color: white;
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -37,12 +45,7 @@ h5 {
   transition: transform .2s;
   .active {
     transition: transform .2s;
-    a {
-      color: white !important;
-      background: #d75c97;
-      border-radius: 5px;
-     
-    }
+  
   }
   // &.active {
   // background: #d75c97;
@@ -76,6 +79,7 @@ h5 {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
+    font-family: Abel;
     font-size: 4rem;
     line-height: 3.5rem;
   }
@@ -90,9 +94,11 @@ height: 402px;
 transition: transform .2s;
 background-size: cover;
 h4 {
+  font-family: Abel;
   color: white;
 }
 a {
+  font-family: Abel;
   color: white;
 }
 &.gluten {
@@ -102,6 +108,11 @@ a {
 }
 &.unraid {
   background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2091&q=80');
+  
+}
+
+&.chase {
+  background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80');
   
 }
 
@@ -137,6 +148,7 @@ a {
     padding-bottom: 5rem;
   }
   h1 {
+
     font-family: Abel;
     font-size: 75px;
     color: #fcfafc;
