@@ -8,6 +8,14 @@ $pink: #d75c97;
 body {
   background: $back;
 }
+.send-button {
+  background: $pink;
+  color: white !important;
+  border: none;
+}
+.send-button:hover, .send-button:active {
+  background: $pink !important;
+}
 h3 {
   font-family: Abel;
   color: black;
