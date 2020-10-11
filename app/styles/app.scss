@@ -5,6 +5,14 @@ $pink: #d75c97;
 .flex-container {
   display: flex;
 }
+.work-card-container {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+.work-card-container:hover {
+  color: white;
+}
 body {
   background: $back;
 }
@@ -96,9 +104,9 @@ h2, h4 {
   }
 }
 .work-card {
-  margin: 1rem;
+  text-align: center;
   background: #B5B4B4;
-height: 402px;
+height: 27rem;
 transition: transform .2s;
 background-size: cover;
 h4 {
@@ -110,7 +118,7 @@ a {
   color: white;
 }
 &.gluten {
-  background-image: url('https://images.unsplash.com/photo-1536329639134-ade172b2fea0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+  background-image: url('/buns.jpeg');
 }
 &.unraid {
   background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2091&q=80');
@@ -125,6 +133,7 @@ a {
   transform: scale(1.1);
   cursor: pointer;
 }
+
 .landing {
   h1 {
     text-align: center;
