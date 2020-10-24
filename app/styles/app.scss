@@ -1,7 +1,7 @@
 @import "ember-bootstrap/bootstrap";
-$back: #f7f0f5;
-$aboutme: #b5b4b4;
-$pink: #d75c97;
+$back: #f1f1f1;
+$aboutme: #f1f1f1;
+$pink: #f1f1f1;
 .flex-container {
   display: flex;
 }
@@ -25,15 +25,15 @@ body {
   background: $pink !important;
 }
 h3 {
-  font-family: Abel;
-  color: black;
+  font-family: Alatsi;
+  color:black;
 }
 h5 {
-  font-family: Abel;
+  font-family: Alatsi;
   color: black;
 }
 h2, h4 {
-  font-family: Abel;
+  font-family: Alatsi;
   color: black;
 }
 .subheading {
@@ -44,12 +44,13 @@ h2, h4 {
   top: 0;
   width: 100%;
   z-index: 1;
+  background:#8FD6E6 !important;
 
   a {
-    font-family: Abel;
+    font-family: Alatsi;
     font-size: 15px;
     color: #000000;
-    font-family: Abel;
+    font-family: Alatsi;
     font-size: 22px;
     letter-spacing: 0;
   }
@@ -95,7 +96,7 @@ h2, h4 {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-family: Abel;
+    font-family: Alatsi;
     font-size: 4rem;
     line-height: 3.5rem;
   }
@@ -110,11 +111,11 @@ height: 27rem;
 transition: transform .2s;
 background-size: cover;
 h4 {
-  font-family: Abel;
+  font-family: Alatsi;
   color: white;
 }
 a {
-  font-family: Abel;
+  font-family: Alatsi;
   color: white;
 }
 &.gluten {
@@ -138,15 +139,15 @@ a {
   h1 {
     text-align: center;
 
-    font-family: Abel;
+    font-family: Alatsi;
     font-size: 53px;
-    color: #4a4a4a;
+    color: #b6b6b6;
     letter-spacing: 23.98px;
   }
   h4 {
     text-align: center;
 
-    font-family: Abel;
+    font-family: Alatsi;
     font-size: 30px;
     color: #000000;
     letter-spacing: 13.07px;
@@ -162,24 +163,24 @@ a {
   }
   h1 {
 
-    font-family: Abel;
+    font-family: Alatsi;
     font-size: 75px;
-    color: #fcfafc;
+    color: black;
     letter-spacing: 5px;
     text-align: left;
   }
   h4 {
-    font-family: Abel;
+    font-family: Alatsi;
     font-size: 35px;
-    color: #fcfafc;
+    color: black;
     letter-spacing: 2.8px;
     text-align: left;
   }
   h5 {
-    font-family: Abel;
+    font-family: Alatsi;
 font-style: normal;
 font-weight: normal;
-    color: #FCFAFC;
+    color:black;
     font-size: 24px;
     line-height: 31px;
     text-align: left;
@@ -191,15 +192,15 @@ font-weight: normal;
 
 // @media (min-width: 768px) {
   .landing {
-    background-image: url("https://i.ibb.co/hyR8nK7/elliebackground.jpg");
+    background-image: url("https://i.ibb.co/fGPyjGP/Website-heading-1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(198, 3, 252, 0); // Tint color
+    background-color: rgba(149, 193, 217, 0); // Tint color
     background-blend-mode: multiply;
     padding-top: 214px;
     padding-bottom: 200px;
-    height: 50rem;
+    height: 43rem;
   }
 
   @media (max-width: 500px){
