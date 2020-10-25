@@ -2,6 +2,8 @@
 $back: #f1f1f1;
 $aboutme: #f1f1f1;
 $pink: #f1f1f1;
+$blue: #8FD6E6;
+
 .flex-container {
   display: flex;
 }
@@ -36,6 +38,10 @@ h2, h4 {
 }
 .subheading {
   color: white;
+}
+.page-section-heading {
+  text-decoration-line: underline;
+  text-decoration-color: $blue;
 }
 
 .center-container {
@@ -79,6 +85,7 @@ h2, h4 {
 .post-heading {
   color: white;
 }
+//gluten free header
 .masthead {
   background-size: cover;background-repeat:no-repeat;background-image: url('https://images.unsplash.com/photo-1536329639134-ade172b2fea0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
   padding-top: calc(6rem + 74px);
