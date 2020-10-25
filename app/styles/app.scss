@@ -6,8 +6,6 @@ $pink: #f1f1f1;
   display: flex;
 }
 .work-card-container {
-  margin-left: auto;
-  margin-right: auto;
   color: white;
 }
 .work-card-container:hover {
@@ -25,15 +23,15 @@ body {
   background: $pink !important;
 }
 h3 {
-  font-family: Alatsi;
+  font-family: 'Roboto Condensed', sans-serif;
   color:black;
 }
 h5 {
-  font-family: Alatsi;
+  font-family: 'Roboto Condensed', sans-serif;
   color: black;
 }
 h2, h4 {
-  font-family: Alatsi;
+  font-family: 'Roboto Condensed', sans-serif;
   color: black;
 }
 .subheading {
@@ -47,16 +45,19 @@ h2, h4 {
   background:#8FD6E6 !important;
 
   a {
-    font-family: Alatsi;
+    
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 15px;
     color: #000000;
-    font-family: Alatsi;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 22px;
     letter-spacing: 0;
   }
   
 }
-
+.link-text {
+  color: #8FD6E6 !important;
+}
 
 .nav-item {
   transition: transform .2s;
@@ -96,7 +97,7 @@ h2, h4 {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-family: Alatsi;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 4rem;
     line-height: 3.5rem;
   }
@@ -111,11 +112,11 @@ height: 27rem;
 transition: transform .2s;
 background-size: cover;
 h4 {
-  font-family: Alatsi;
+  font-family: 'Roboto Condensed', sans-serif;
   color: white;
 }
 a {
-  font-family: Alatsi;
+  font-family: 'Roboto Condensed', sans-serif;
   color: white;
 }
 &.gluten {
@@ -139,7 +140,7 @@ a {
   h1 {
     text-align: center;
 
-    font-family: Alatsi;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 53px;
     color: #b6b6b6;
     letter-spacing: 23.98px;
@@ -147,7 +148,7 @@ a {
   h4 {
     text-align: center;
 
-    font-family: Alatsi;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 30px;
     color: #000000;
     letter-spacing: 13.07px;
@@ -163,21 +164,21 @@ a {
   }
   h1 {
 
-    font-family: Alatsi;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 75px;
     color: black;
     letter-spacing: 5px;
     text-align: left;
   }
   h4 {
-    font-family: Alatsi;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 35px;
     color: black;
     letter-spacing: 2.8px;
     text-align: left;
   }
   h5 {
-    font-family: Alatsi;
+    font-family: 'Roboto Condensed', sans-serif;
 font-style: normal;
 font-weight: normal;
     color:black;

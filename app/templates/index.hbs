@@ -46,7 +46,7 @@
         </header> --}}
         <br>
 <section class="page-section portfolio" id="portfolio">
-<div class="container">
+<div>
          <Anchor @id="work" />
         <br>
       <h2 class="page-section-heading text-center text-uppercase  mb-0">Work</h2>
@@ -56,14 +56,35 @@
 
       
         <br>
-    {{#link-to "simply-gluten-free" class="work-card-container col-md-12" }}               
-  <div class="work-card col-sm-12 gluten" style="">
+
+        
+ 
+      <div class="col-sm col-md-6" style="">
+          <div class="container" style="">
+              <div class="" style="  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);">
+          <h4>Simply Gluten Free</h4>
+          <p>A food app enabling individuals who follow a gluten free diet, to find food supplies, recipes and restaurants with ease.</p>
+          <p>{{#link-to "simply-gluten-free" class="link-text" }}<b>Read more</b>{{/link-to}}</p>     
+              </div>
+
+          </div>
+
+      </div>
+         {{#link-to "simply-gluten-free" class="work-card-container col-md-6 col-sm" }}               
+  <div class="work-card gluten" style="">
   
       <h4 style="font-size: 43px;padding-top:10rem;">Simply Gluten Free</h4>
  
           
       </div>
+
        {{/link-to}}
+
 </div>
         <!-- Icon Divider-->
         <div class="divider-custom">
