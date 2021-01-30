@@ -5,7 +5,7 @@
   "description": "Small description for ellie-website goes here",
   "repository": "",
   "license": "MIT",
-  "author": "",
+  "author": "Ellie",
   "directories": {
     "doc": "doc",
     "test": "tests"
