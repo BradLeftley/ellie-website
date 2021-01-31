@@ -24,3 +24,6 @@
 /bower.json.ember-try
 /package.json.ember-try
 .DS_Store
+/.DS_Store
+/public/.DS_Store
+/public/assets/.DS_Store
