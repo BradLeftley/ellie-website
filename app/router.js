@@ -9,6 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('simply-gluten-free');
   this.route('icon-library');
+  this.route('locate-local');
 });
 
 export default Router;
