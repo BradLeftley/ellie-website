@@ -21,14 +21,28 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-12 col-md-12 mx-auto">
         <br>
         <p>An opensource library of designed svg icons to be used in web or mobile projects.</p>
         <div class="clearfix">
+          <div class="row">
+                      {{#each model as |icon|}}
+            <div class="col-sm-2">
+              <div class="" style="text-align: center;">
 
-  
+
+              <span class="card" style="margin: auto;">{{svg-jar icon.src class="the-icon"}}</span> 
+                            <span>{{icon.iconName}}</span>
+              </div>
+
+            </div>
+          {{/each}}
+        {{log model}}
+          </div>
+
 
         </div>
+
 
       </div>
     </div>
