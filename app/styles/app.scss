@@ -95,7 +95,9 @@ h2, h4 {
 .the-icon {
   margin: auto;
 }
-
+.card:hover {
+  border: 1px solid $blue;
+}
 //gluten free header
 .masthead {
   background-size: cover;background-repeat:no-repeat;
