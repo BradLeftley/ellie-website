@@ -3,6 +3,9 @@ $back: #f1f1f1;
 $aboutme: #f1f1f1;
 $pink: #f1f1f1;
 $blue: #8FD6E6;
+.item {
+  max-height: 320px;
+}
 .container-item {
   margin: 0;
   position: absolute;
@@ -91,10 +94,17 @@ h2, h4 {
 }
 //gluten free header
 .masthead {
-  background-size: cover;background-repeat:no-repeat;background-image: url('https://i.ibb.co/3Rk64x3/Heading-final-2.png');
+  background-size: cover;background-repeat:no-repeat;
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
+  &.gluten {
+    background-image: url('https://i.ibb.co/3Rk64x3/Heading-final-2.png');
+  }
+  &.locate {
+    background-image: url('https://i.ibb.co/3Rk64x3/Heading-final-2.png');
+  }
 }
+
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
