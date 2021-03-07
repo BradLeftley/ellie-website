@@ -26,13 +26,13 @@
         <p>An opensource library of designed svg icons to be used in web or mobile projects.</p>
         <div class="clearfix">
           <div class="row">
-                      {{#each model as |icon|}}
+                      {{#each model as |icon index|}}
             <div class="col-sm-2">
               <div class="" style="text-align: center;">
 
 
               <span class="card" style="margin: auto;">{{svg-jar icon.src class="the-icon"}}</span> 
-                            <span>{{icon.iconName}}</span>
+                            <span>{{icon.iconName}}-{{index}}</span>
               </div>
 
             </div>

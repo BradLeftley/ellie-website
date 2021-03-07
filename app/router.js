@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('simply-gluten-free');
   this.route('icon-library');
   this.route('locate-local');
+  this.route('covid-update');
 });
 
 export default Router;

@@ -4,103 +4,103 @@ export default Route.extend({
     model(){
         return [
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-01'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-02'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-03'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-04'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-05'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-06'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-07'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-08'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-09'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-10'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-11'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-12'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-13'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-14'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-15'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-16'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-17'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-18'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-19'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-20'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-21'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-22'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-23'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-24'
         },
         {
-            iconName: 'icon',
+            iconName: 'Icon',
             src: 'ICONS-25'
         }
     ]
