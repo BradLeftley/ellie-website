@@ -5,13 +5,10 @@
             <h3 style="font-size: 35px">Designer</h3>
             <h3 style="font-size: 35px">London, UK</h3>
         </div>
-
     </div>
-
 </section>
 <section class="about-me" id="about">
-
-    <div class="text-container container">
+    <div class="text-container">
         <Anchor @id="about"></Anchor>
         <h1>
             Hello,
@@ -50,93 +47,77 @@
 <section class="page-section portfolio" id="portfolio">
     <div>
         <Anchor @id="work" />
-        <br>
-        <h2 class="page-section-heading text-center text-uppercase  mb-0">Work</h2>
-        <br>
-        <div class="row">
-            <!-- Portfolio Section Heading-->
+        <div class="col-md-12">
+            <h2 class="page-section-heading text-center text-uppercase  mb-0">Work</h2>
+        </div>
 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-container" style="">
+                        <h4>Locate Local </h4>
+                        <p>A business directory allowing users to find busiensses and services in their local area.</p>
+                        <p>{{#link-to "locate-local" class="link-text" }}<b>Read more</b>{{/link-to}}</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    {{#link-to "locate-local" }}
 
-            <br>
+                    <img class="img-fluid" src="https://i.ibb.co/S0fkdy2/Screen-Shot-2021-02-28-at-12-54-09.png">
 
-{{#link-to "simply-gluten-free" class="work-card-container col-md-6 col-sm" }}
-            <div class="work-card gluten" style="">
-
-                <h4 style="font-size: 43px;padding-top:10rem;"></h4>
-
-
+                    {{/link-to}}
+                </div>
             </div>
 
-            {{/link-to}}
-
-            <div class="col-sm col-md-6" style="">
-                <div class="container" style="">
-                 <div class="container-item" style="">
+            <div class="row">
+                <div class="col-md-6">
+                    {{#link-to "simply-gluten-free" }}
+                    <img class="img-fluid" src="assets/images/gluten-free.png">
+                    {{/link-to}}
+                </div>
+                <div class="col-md-6">
+                    <div class="text-container" style="">
                         <h4>Simply Gluten Free</h4>
                         <p>A food app enabling individuals who follow a gluten free diet, to find food supplies, recipes
                             and restaurants with ease.</p>
                         <p>{{#link-to "simply-gluten-free" class="link-text" }}<b>Read more</b>{{/link-to}}</p>
                     </div>
-
                 </div>
 
             </div>
-            
-
-        </div>
-                <div class="row">
-            <!-- Portfolio Section Heading-->
-
-
-            <br>
-
-            <div class="col-sm col-md-6" style="">
-                <div class="container" style="">
-                <div class="container-item" style="">
-                        <h4>Locate Local </h4>
-                        <p>A business directory allowing users to find busiensses and services in their local area.</p>
-                        <p style="color: grey"><b>In progress</b></p>
-                    </div>
-
-                </div>
-
-            </div>
-            {{#link-to "locate-local" class="work-card-container col-md-6 col-sm" }}
-            <div class="work-card locate" style="">
-
-                <h4 style="font-size: 43px;padding-top:10rem;"></h4>
-
-
-            </div>
-
-            {{/link-to}}
-
-        </div>
-        <div class="row">
-            <br>
-            <div class="col-sm col-md-6" style="">
-                <div class="container" style="">
-                    <div class="container-item" style="">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-container" style="">
                         <h4>Icon Library</h4>
                         <p>An opensource library of designed svg icons to be used in web or mobile projects.</p>
                         <p>{{#link-to "icon-library" class="link-text" }}<b>Read more</b>{{/link-to}}</p>
                     </div>
-
                 </div>
-
+                <div class="col-md-6">
+                    {{#link-to "icon-library" }}
+                    <img class="img-fluid" src="https://i.ibb.co/tXfhkFh/Screen-Shot-2021-02-28-at-14-52-45.png">
+                    {{/link-to}}
+                </div>
             </div>
-            {{#link-to "icon-library" class="work-card-container col-md-6 col-sm" }}
-            <div class="work-card icon-library" style="">
+            <div class="row">
+                <div class="col-md-6">
 
-                <h4 style="font-size: 43px;padding-top:10rem;"></h4>
-
-
+                    {{!-- {{#link-to "simply-gluten-free" }} --}}
+                    <img class="img-fluid" src="https://i.ibb.co/2YdFYwb/covid-update.jpg">
+                    {{!-- {{/link-to}} --}}
+                </div>
+                <div class="col-md-6">
+                    <div class="text-container" style="">
+                        <h4>Covid Update</h4>
+                        <p>Simple dashboard webpage for viewing daily covid-19 statistics. </p>
+                        {{!-- <p>{{#link-to "simply-gluten-free" class="link-text" }}<b>Read more</b>{{/link-to}}</p>
+                        --}}
+                        <p><b>Coming soon</b></p>              
+                    </div>
+                </div>
             </div>
-
-            {{/link-to}}
-
         </div>
-        
+
         <!-- Icon Divider-->
         <div class="divider-custom">
             <div class="divider-custom-line"></div>
@@ -163,23 +144,26 @@
 
 
     </div>
-      <div class="row">
-    <div class="col">
-        <div class="center-container">
-            <img src="assets/images/IMG_3911.jpg" alt="Affinity diagram 1" class="center" style="width:275px;height:200px;">
+    <div class="row">
+        <div class="col">
+            <div class="center-container">
+                <img src="assets/images/IMG_3911.jpg" alt="Affinity diagram 1" class="center"
+                    style="width:275px;height:200px;">
+            </div>
+        </div>
+        <div class="col">
+            <div class="center-container">
+                <img src="assets/images/IMG_3911.jpg" alt="Affinity diagram 1" class="center"
+                    style="width:275px;height:200px;">
+            </div>
+        </div>
+        <div class="col">
+            <div class="center-container">
+                <img src="assets/images/IMG_3911.jpg" alt="Affinity diagram 1" class="center"
+                    style="width:275px;height:200px;">
+            </div>
         </div>
     </div>
-    <div class="col">
-        <div class="center-container">
-            <img src="assets/images/IMG_3911.jpg" alt="Affinity diagram 1" class="center" style="width:275px;height:200px;">
-        </div>
-    </div>
-    <div class="col">
-        <div class="center-container">
-            <img src="assets/images/IMG_3911.jpg" alt="Affinity diagram 1" class="center" style="width:275px;height:200px;">
-        </div>
-    </div>
-  </div>
 
 </section> --}}
 {{!-- <section class="page-section portfolio about-me">

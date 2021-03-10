@@ -1,1 +1,44 @@
-{{outlet}}
+<div class="masthead library" style="">
+  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Icon library</h1>
+            <h6>Personal project | 2021</h6>
+            {{!-- <span class="meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on January 31, 2020 · <span class="reading-time" title="Estimated read time">
+  
+   4 mins  read </span>
+
+            </span> --}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 mx-auto">
+        <br>
+        <p>An opensource library of designed svg icons to be used in web or mobile projects.</p>
+        <div class="clearfix">
+          <div class="row">
+                      {{#each model as |icon index|}}
+            <div class="col-sm-2">
+              <div class="" style="text-align: center;">
+
+
+              <span class="card" style="margin: auto;">{{svg-jar icon.src class="the-icon"}}</span> 
+                            <span>{{icon.iconName}}-{{index}}</span>
+              </div>
+
+            </div>
+          {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
