@@ -6,6 +6,9 @@ $blue: #8FD6E6;
 .item {
   max-height: 320px;
 }
+.text-container {
+  margin: 5rem;
+}
 .container-item {
   margin: 0;
   position: absolute;
@@ -203,7 +206,6 @@ a {
   background: $pink;
   .text-container {
     padding-top: 5rem;
-    padding-bottom: 5rem;
   }
   h1 {
 
