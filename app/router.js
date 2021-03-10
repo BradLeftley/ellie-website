@@ -12,4 +12,4 @@ Router.map(function() {
   this.route('locate-local');
 });
 
-export default Router;
+
